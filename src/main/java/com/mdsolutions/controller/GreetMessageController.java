@@ -10,11 +10,11 @@ public class GreetMessageController {
 
 	@GetMapping("/greet/simpleReqParam")
 	public String simpleReqParamMessage(@RequestParam String message) {
-		return "Greeting from ReqParam Controller :"+message;
+		return "Greeting from ReqParam Controller :  "+message;
 	}
 	
 	@GetMapping("/greet/simplePathParam/{message}")
 	public String simplePathParamMessage(@PathVariable String message) {
-		return "Greeting from PathParam Controller :"+message;
+		return "Greeting from PathParam Controller :  "+message;
 	}
 }
