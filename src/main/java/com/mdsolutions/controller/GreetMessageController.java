@@ -10,6 +10,7 @@ public class GreetMessageController {
 
 	@GetMapping("/greet/simpleReqParam")
 	public String simpleReqParamMessage(@RequestParam String message) {
+		// testing code
 		return "Greeting from ReqParam Controller :"+message;
 	}
 	
